@@ -1,0 +1,245 @@
+// ************************ Модальное окно ************************ //
+// mf
+.application-modal__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  display: none;
+
+  .application-modal {
+    background: white;
+    padding: 50px;
+
+    @media (max-width: $breakpoint480) {
+      padding: 10px;
+    }
+
+    &__title {
+      text-align: left;
+
+      @media (max-width: $breakpoint768) {
+        text-align: center;
+      }
+    }
+
+    &__close {
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+// ************************ Кнопка вызова модального окна ************************ //
+.application-modal__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  color: #777777;
+  border-bottom: 1px solid #D5D5D5;
+  width: fit-content;
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint768) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+
+
+  &:hover {
+    svg {
+      transition: transform 0.3s ease 0s;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.section {
+
+  // .section__application
+
+  &__application {
+    padding: 130px 0;
+
+    @media (max-width: $breakpoint992) {
+      top: 70px 0;
+    }
+
+    @media (max-width: $breakpoint768) {
+      top: 50px 0;
+    }
+
+    @media (max-width: $breakpoint480) {
+      padding: 30px 0;
+    }
+  }
+}
+
+.application {
+
+  // .application__inner
+
+  &__inner {
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.application-modal {
+
+  // .application-modal__wrapper
+
+  &__wrapper {}
+
+  // .application-modal__close
+
+  &__close {}
+
+  // .application-modal__title
+
+  &__title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    color: #777777;
+    margin-bottom: 40px;
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+
+  }
+
+  // .application-modal__body
+
+  &__body {}
+
+  // .application-modal__form
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  // .application-modal__btn
+
+  &__btn {}
+}
+
+.form-application {
+
+  // .form-application__row
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+    }
+  }
+
+
+
+  // .form-application__input
+
+  &__input {
+    max-width: 335px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: $greyColor;
+    border-bottom: 1px solid $greyColor;
+    outline: transparent;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+
+      @media (max-width: $breakpoint768) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: $breakpoint480) {
+      font-size: 14px;
+    }
+
+    &::placeholder {
+      background-color: transparent;
+    }
+
+  }
+
+  // .form-application__button
+
+  &__button {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.15em;
+    padding: 22px 55px;
+    background-color: #393246;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+      svg {
+        transition: all 0.3s ease 0s;
+        transform: rotate(45deg);
+      }
+    }
+
+    &:active {
+      background-color: #4A415A;
+    }
+
+    &:disabled {
+      background-color: #D5D5D5;
+    }
+  }
+
+  // .form-application__agreement
+
+  &__agreement {
+    font-size: 13px;
+    line-height: 1.15;
+    color: #878787;
+    margin-left: 35px;
+    max-width: 309px;
+
+    a {
+      text-decoration: underline;
+      color: #878787;
+    }
+
+    @media (max-width: $breakpoint480) {
+      font-size: 12px;
+      margin-left: 0;
+    }
+  }
+}

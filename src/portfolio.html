@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+  <!-- Header -->
+  <!-- Navbar -->
+  <div class="header__nav content__nav">
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo"> <a href="index.html"><img src="img/logo-content.png" alt="logo"> </a></div>
+          <ul class="menu">
+            <li class="menu__item"><a href="portfolio.html" class="menu__item-link" data-scroll>Портфолио</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>услуги и цены</a></li>
+            <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Контакты</a></li>
+          </ul>
+          <div class="burger">
+            <span></span>
+          </div>
+          <div class="header__phone">
+            <a class="header__phone-link" href="tel:+70000000000"><svg width="30" height="30" viewBox="0 0 30 30"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.8732 26C15.4889 26 11.5462 24.1881 8.67236 21.3134C5.79854 18.4387 4 14.5076 4 10.122C4 9.2 4.40963 8.37409 5.04968 7.81067L7.55227 5.42896C7.82749 5.16006 8.19872 5 8.60835 5C9.13959 5 9.60683 5.2689 9.88205 5.67866L12.423 9.23201C12.6023 9.48171 12.7047 9.78902 12.7047 10.122C12.7047 10.5765 12.4998 10.9927 12.1862 11.2744L10.1509 13.0671C9.86925 13.3488 9.63243 13.7457 9.63243 14.2195C9.62603 15.3463 10.4645 16.8957 11.783 18.2146C13.1015 19.5335 14.6504 20.3723 15.7769 20.3659C16.2441 20.3659 16.6474 20.129 16.929 19.8473L18.7275 17.8177C19.0091 17.4976 19.4188 17.2991 19.8796 17.2991C20.2124 17.2991 20.5133 17.4015 20.7693 17.5808L24.3215 20.1226C24.7312 20.3979 25 20.8652 25 21.3966C25 21.8064 24.84 22.1777 24.5776 22.453L22.1966 24.9564C21.6205 25.5902 20.7949 26 19.8732 26Z"
+                  stroke="#777777" stroke-miterlimit="10" />
+              </svg>+7 000 000-00-00
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Page -->
+  <main>
+    <section data-ref="container-2" class="section__portfolio">
+      <div class="container">
+        <div class="portfolio__inner">
+          <h3 class="portfolio__title title">
+            Портфолио
+          </h3>
+          <div class="portfolio__filter filter" id="portfolio__filter-content">
+            <button class="filter__btn" type="button" data-filter="all">все работы<span>29</span></button>
+            <button class="filter__btn" type="button" data-filter=".category-a">квартиры<span>18</span></button>
+            <button class="filter__btn" type="button" data-filter=".category-b">дома<span>12</span></button>
+            <button class="filter__btn" type="button" data-filter=".category-c">коммерческие
+              помещения<span>2</span></button>
+            <div class="portfolio__filter-line"></div>
+            <div class="portfolio__gallery gallery container">
+              <div class="gallery__items mix category-a" data-order="11"><img src="img/portfolio1.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-b" data-order="12"><img src="img/portfolio2.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-b category-c" data-order="13"><img src="img/portfolio3.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-a category-d" data-order="14"><img src="img/portfolio4.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-c category-d" data-order="15"><img src="img/portfolio5.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-b category-d" data-order="16"><img src="img/portfolio6.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-a category-d" data-order="17"><img src="img/portfolio7.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-a category-d category-c" data-order="18"><img
+                  src="img/portfolio8.jpg" alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-a category-d category-c" data-order="19"><img
+                  src="img/portfolio9.jpg" alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-a category-b category-c" data-order="20"><img
+                  src="img/portfolio10.jpg" alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+
+              </div>
+              <div class="gallery__items mix category-a" data-order="21"><img src="img/portfolio1.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-b" data-order="22"><img src="img/portfolio2.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-b category-c" data-order="23"><img src="img/portfolio3.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-a category-d" data-order="24"><img src="img/portfolio4.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-c category-d" data-order="25"><img src="img/portfolio5.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-b category-d" data-order="26"><img src="img/portfolio6.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-a category-d" data-order="27"><img src="img/portfolio7.jpg"
+                  alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-a category-d category-c" data-order="28"><img
+                  src="img/portfolio8.jpg" alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-a category-d category-c" data-order="29"><img
+                  src="img/portfolio9.jpg" alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+              </div>
+              <div class="gallery__items mix category-a category-b category-c" data-order="30"><img
+                  src="img/portfolio10.jpg" alt="portfolio photos">
+                <div class="gallery__items-text">
+                  <p>loft</p>
+                  <p>Unique collection</p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- <div class="portfolio__link">
+            <a href="#">показать еще работы</a>
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  @@include('./html/_footer.html')
+
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>
